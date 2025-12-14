@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - HomeIoT</title>
+    <style>
+        :root {
+            --primary-color: #2563EB; /* Modern Blue */
+            --text-color: #1F2937;
+            --text-light: #6B7280;
+            --bg-color: #F3F4F6;
+            --container-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #E5E7EB;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            color: #111827;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: #374151;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .contact-box {
+            background-color: #EFF6FF;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                padding: 20px;
+                box-shadow: none;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Privacy Policy for HomeIoT</h1>
+        <span class="date"><strong>Last Updated:</strong> December 14, 2025</span>
+
+        <p>This Privacy Policy describes how HomeIoT ("we", "us", or "our") collects, uses, and handles your information when you use our mobile application ("App"). This policy is designed to inform you about our privacy practices.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>1. Local Device Information</h3>
+        <p>We store information about your IoT devices locally on your device, including:</p>
+        <ul>
+            <li>Device names and types</li>
+            <li>Room assignments</li>
+            <li>MQTT topics (request/response)</li>
+            <li>Payloads for on/off commands</li>
+            <li>Device status and settings</li>
+        </ul>
+
+        <p><strong>MQTT Broker Configuration:</strong> We store your MQTT broker connection details locally on your device, including broker name, host address, port number, username, password, and client ID.</p>
+
+        <h3>2. App Usage Data</h3>
+        <ul>
+            <li>Information about how you use the App features</li>
+            <li>Device control usage patterns</li>
+            <li>App settings and preferences</li>
+        </ul>
+
+        <h3>3. Sensor Data</h3>
+        <ul>
+            <li>Energy and environmental readings from connected IoT sensors</li>
+            <li>Historical sensor data (stored locally)</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use your locally stored information solely to:</p>
+        <ul>
+            <li>Facilitate MQTT communication with your IoT devices</li>
+            <li>Maintain your device configurations</li>
+            <li>Provide the core functionality of controlling your smart home devices</li>
+            <li>Display sensor readings and historical data</li>
+            <li>Remember your app preferences and settings</li>
+        </ul>
+
+        <h2>Data Storage and Security</h2>
+
+        <h3>Local-Only Storage</h3>
+        <ul>
+            <li>All your data is stored <strong>locally on your device only</strong>.</li>
+            <li>We do not transmit, upload, or store your data on any external servers.</li>
+            <li>Your MQTT broker credentials and device configurations remain on your device.</li>
+        </ul>
+
+        <h3>Database</h3>
+        <ul>
+            <li>We use Room database (local SQLite database) to store your configurations.</li>
+            <li>Data is encrypted using Android's built-in encryption when device encryption is enabled.</li>
+        </ul>
+
+        <h2>Data Sharing</h2>
+        <p><strong>No Data Sharing:</strong> We do not share, sell, rent, or trade your personal information with third parties. We do not share your device configurations or MQTT credentials with any external services. No analytics data is sent to external servers.</p>
+        
+        <p><strong>MQTT Communication:</strong> All MQTT communication happens directly between your device and your specified MQTT broker. We do not intercept or store the content of MQTT messages.</p>
+
+        <h2>In-App Purchases</h2>
+        <p>Billing is handled through the Google Play Store. We do not collect or store your payment information. Payment processing is managed entirely by Google's payment systems.</p>
+
+        <h2>Data Retention</h2>
+        <p>Your data remains on your device indefinitely until you delete the app, manually clear the app data, or choose to export and backup configurations elsewhere.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>Our App does not address anyone under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>Our App uses the following third-party services that have their own privacy policies:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Billing Library</a> (for in-app purchases)</li>
+            <li>Eclipse Paho MQTT Client (for MQTT communication)</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <div class="contact-box">
+            <strong>Email:</strong> <a href="mailto:info@apprixis.com">info@apprixis.com</a>
+        </div>
+
+        <h2>Effective Date</h2>
+        <p>This Privacy Policy is effective as of December 14, 2025.</p>
+
+        <p style="margin-top: 40px; font-size: 0.8rem; color: #6B7280; text-align: center;">
+            &copy; 2025 HomeIoT / Apprixis. All rights reserved.
+        </p>
+    </div>
+
+</body>
+</html>
